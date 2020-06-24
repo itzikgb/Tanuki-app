@@ -1,0 +1,17 @@
+include:
+  - template: Auto-DevOps.gitlab-ci.yml
+
+# pipeline configuration variables (i.e. not secrets) are better kept in git for transparency
+variables:
+  AUTO_DEVOPS_DEPLOY_DEBUG: 1
+  TEST_DISABLED: 1
+  SECRET_DETECTION_DISABLED: 1
+  SAST_DISABLED: "true"
+  LICENSE_MANAGEMENT_DISABLED: "true"
+  DEPENDENCY_SCANNING_DISABLED: "true"
+  DAST_DISABLED: "true"
+  CONTAINER_SCANNING_DISABLED: "true"
+  CODE_QUALITY_DISABLED: "true"
+  INCREMENTAL_ROLLOUT_MODE: "manual"
+  STAGING_ENABLED: 1
+   
