@@ -15,3 +15,20 @@ variables:
   INCREMENTAL_ROLLOUT_MODE: "manual"
   STAGING_ENABLED: 1
    
+   
+# additional, non-Auto DevOps jobs
+regressions:
+  stage: test
+  script:
+    - echo "test..."
+
+functional tests:
+  stage: test
+  script:
+    - echo "test..."
+
+mobile tests:
+  stage: test
+  script:
+    - echo "test..."
+
