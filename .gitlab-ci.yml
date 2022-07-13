@@ -13,8 +13,7 @@ variables:
   CONTAINER_SCANNING_DISABLED: "true"
   CODE_QUALITY_DISABLED: "true"
   INCREMENTAL_ROLLOUT_MODE: "manual"
-  STAGING_ENABLED: 1
-   
+  STAGING_ENABLED: 1 
    
 # additional, non-Auto DevOps jobs
 regressions:
