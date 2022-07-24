@@ -48,6 +48,6 @@ jobs:
         # gitlab-ci valid refs are only the branches and tags
           ref: master
         # gitlab project id
-          project_id: 13114249
+          project_id: 13113524
         # debug mode
           debug: true
