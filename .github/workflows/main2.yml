@@ -34,3 +34,20 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          
+          
+      - name: Trigger GitLab CI Job
+      # You may pin to the exact commit or the version.
+      # uses: appleboy/gitlab-ci-action@64e3a31d93c8b1242847366dbed93573fd10a591
+        uses: appleboy/gitlab-ci-action@v0.0.2
+        with:
+        # gitlab-ci base url
+          host: https://gitlab.com
+        # gitlab-ci token
+          token: 37ba64f63e49cb2c44502463da59df
+        # gitlab-ci valid refs are only the branches and tags
+          ref: master
+        # gitlab project id
+          project_id: 13114249
+        # debug mode
+          debug: true
