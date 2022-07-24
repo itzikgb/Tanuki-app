@@ -44,7 +44,7 @@ jobs:
         # gitlab-ci base url
           host: https://gitlab.com
         # gitlab-ci token
-          token: 37ba64f63e49cb2c44502463da59df
+          token: 107336ec7303b015adbd92d934f3b1
         # gitlab-ci valid refs are only the branches and tags
           ref: master
         # gitlab project id
